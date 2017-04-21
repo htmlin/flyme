@@ -4,50 +4,29 @@
 
 > 一套基于 Vue.js 的移动端 UI 组件库
 
-## 安装
+## 使用文档
+
+[中文文档](https://fedesigner.gitbooks.io/flyme/content/)
+
+## 开发
+
+安装依赖：
 
 ```
-npm install flyme-ui --save-dev
+npm install
 ```
 
-默认会导入所有组件，所以只需使用 `Vue.use()` 调用插件：
+运行 Demo：
 
-```javascript
-import Vue from 'vue';
-import FlymeUI from 'flyme-ui';
-Vue.use(FlymeUI);
+```
+npm test
 ```
 
-## 使用
-```html
-<!-- vue 单文件组件中使用 -->
-<template>
-    <!-- 使用组件 -->
-    <fm-header title="Flyme UI">
-        <fm-icon @click.native="showToast" id="location" color="#f12528"></fm-icon>
-    </fm-header>
-    <!-- ... -->
-</template>
-<script>
-    export default {
-        // ...
-        methods: {
-            showToast() {
-                // 调用实例方法
-                this.$toast('Flyme UI');
-            }
-        }
-    }
-</script>
+在浏览器中访问：
+
 ```
-
-## 组件
-
-[Header 标题栏](doc/header.md)
-
-[Icon 图标](doc/icon.md)
-
-[Tag 标签](doc/tag.md)
+http://localhost:8080/
+```
 
 ## 贡献
 
