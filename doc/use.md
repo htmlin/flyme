@@ -40,11 +40,6 @@ Vue.use(FlymeUI);
 
 如果您想在 webpack 中按需使用组件，减少文件体积，可以这样写：
 
-```
-import fmHeader from 'flyme-ui/src/component/header';
-```
-
-然后手动注册组件：
 ```html
 <template>
     <div id="app">
@@ -53,6 +48,7 @@ import fmHeader from 'flyme-ui/src/component/header';
     </div>
 </template>
 <script>
+    import fmHeader from 'flyme-ui/src/component/header'; // 手动引入
     export default {
         components: {
             fmHeader // 手动注册
