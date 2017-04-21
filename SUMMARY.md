@@ -1,5 +1,3 @@
-# Summary
-
 ## Flyme UI
 
 * [介绍](README.md)
