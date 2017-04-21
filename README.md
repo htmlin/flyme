@@ -10,26 +10,33 @@
 npm install flyme-ui --save-dev
 ```
 
+默认会导入所有组件，所以只需使用 `Vue.use()` 调用插件：
+
+```javascript
+import Vue from 'vue';
+import FlymeUI from 'flyme-ui';
+Vue.use(FlymeUI);
+```
+
 ## 使用
-
-### 公共组件
-
 ```html
-<!-- vue 单文件组件 -->
+<!-- vue 单文件组件中使用 -->
 <template>
-    ...
-    <fm-icon :size="18" color="#f12528" id="location"></fm-icon>
-    ...
+    <!-- 使用组件 -->
+    <fm-header title="Flyme UI">
+        <fm-icon @click.native="showToast" id="location" color="#f12528"></fm-icon>
+    </fm-header>
+    <!-- ... -->
 </template>
 <script>
-    // 建议以 fm 为前缀进行重命名
-    import { icon as fmIcon } from 'flyme-ui';
     export default {
-        components: {
-            fmIcon,
-            ...
-        },
-        ...
+        // ...
+        methods: {
+            showToast() {
+                // 调用实例方法
+                this.$toast('Flyme UI');
+            }
+        }
     }
 </script>
 ```
