@@ -6,7 +6,7 @@
 
 ## 使用文档
 
-[中文文档](https://fedesigner.gitbooks.io/flyme/content/)
+[中文文档](https://fedesigner.gitbooks.io/flyme/content/doc/install.html)
 
 ## 开发
 

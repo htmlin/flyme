@@ -43,3 +43,24 @@ Vue.use(FlymeUI);
 ```
 import fmHeader from 'flyme-ui/src/component/header';
 ```
+
+然后手动注册组件：
+```html
+<template>
+    <div id="app">
+        <!-- 使用组件 -->
+        <fm-header title="Flyme UI"></fm-header>
+    </div>
+</template>
+<script>
+    export default {
+        components: {
+            fmHeader // 手动注册
+        },
+        data: () => ({})
+    }
+</script>
+```
+
+
+

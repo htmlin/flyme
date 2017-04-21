@@ -13,9 +13,10 @@
 |  参数  |  描述  |  类型  |  默认值  | 可选值  |
 |  -----  |  -----  |  -----  |  -----  |  -----  |
 |  title  |  标题  |  String  |  document.title  |  --  |
-|  color  |  标题字体颜色  |  String  |  #666  |  css 颜色值  |
-|  backgroundColor  |  标题栏背景颜色  |  String  |  #fff  |  css 颜色值  |
+|  color  |  标题字体颜色  |  String  |  #666  |  --  |
+|  backgroundColor  |  标题栏背景颜色  |  String  |  #fff  |  --  |
 |  underline  |  是否要标题栏下划线  |  Boolean  |  true  |  true, false  |
+|  statusbar  |  是否要预留状态栏位置  |  Boolean  |  true  |  true, false  |
 
 ## Header Events
 
