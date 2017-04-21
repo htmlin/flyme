@@ -10,7 +10,9 @@
 npm install flyme-ui --save-dev
 ```
 
-## 示例
+## 使用
+
+### 公共组件
 
 ```html
 <!-- vue 单文件组件 -->
