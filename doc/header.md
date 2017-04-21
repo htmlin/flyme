@@ -1,6 +1,6 @@
 # Header 标题栏
 
-头部标题栏，支持 slot：
+头部标题栏，支持 slot，使用该组件会在 `body` 元素上加上与标题栏等高的上内边距：
 
 ```html
 <fm-header title="标题">
