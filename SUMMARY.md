@@ -8,3 +8,8 @@
 
 * [Header 标题栏](doc/header.md)
 
+* [Icon 图标](doc/icon.md)
+
+* [Tag 标签](doc/tag.md)
+
+
