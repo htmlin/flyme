@@ -2,7 +2,8 @@
 
 ## 基础
 
-* [安装](README.md)
+* [安装](doc/header.md)
+* [使用](doc/use.md)
 
 ## 组件
 
