@@ -11,7 +11,7 @@
 </template>
 
 <script>
-    import icon from './index.js';
+    import icon from './icon.js';
     export default {
         data: () => ({ icon }),
         props: {
@@ -21,11 +21,15 @@
             },
             size: {
                 type: Number,
-                default: 16
+                default: 24
             },
             color: {
                 type: String,
                 default: '#000'
+            },
+            rotate: {
+                type: Number,
+                default: 0
             }
         },
         computed: {
@@ -39,6 +43,7 @@
                 return {
                     width: `${this.size}px`,
                     height: `${this.size}px`,
+                    transform: `rotate(${this.rotate}deg)`,
                     fill: this.color
                 }
             }
