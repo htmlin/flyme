@@ -2,7 +2,7 @@
 
 [![npm package](https://img.shields.io/npm/v/flyme-ui.svg)](https://www.npmjs.org/package/flyme-ui)
 
-> 一套基于 Vue.js 的移动端 UI 组件库
+> 一套基于 Vue.js 的响应式移动端 UI 组件库
 
 ## 使用文档
 

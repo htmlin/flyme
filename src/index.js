@@ -1,6 +1,7 @@
 // 公共组件
 import Header from './component/header';
 import Icon from './component/icon';
+import List from './component/list';
 import Tag from './component/tag';
 
 // 实例方法
@@ -9,6 +10,8 @@ import Toast from './component/toast';
 const flyme = {
     Header,
     Icon,
+    List: List.List,
+    ListItem: List.ListItem,
     Tag
 }
 

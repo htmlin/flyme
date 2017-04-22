@@ -1,7 +1,7 @@
 {
   "name": "flyme-ui",
   "version": "0.2.0",
-  "description": "一套基于 Vue.js 的移动端 UI 组件库",
+  "description": "一套基于 Vue.js 的响应式移动端 UI 组件库",
   "main": "src/index.js",
   "scripts": {
     "test": "webpack-dev-server --progress --config build/webpack.dev.js"

@@ -1,35 +1,35 @@
 <style>
     .fm-toast {
         position: fixed;
-        bottom: 80px;
+        bottom: 18.75%;
         left: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 34px;
-        border-radius: 4px;
-        padding: 0 40px;
-        font-size: 14px;
+        height: 9.444vw;
+        border-radius: 0.926vw;
+        padding: 0 11.111vw;
+        font-size: 3.889vw;
         font-weight: 500;
         white-space: nowrap;
         color: #fff;
         background: rgba(0, 0, 0, 0.85);
         transform: translate3d(-50%, 0, 0);
     }
-    .fm-toast.success {
+    .fm-toast--success {
         flex-direction: column;
         bottom: 50%;
-        height: 80px;
+        height: 22.222vw;
         transform: translate3d(-50%, 50%, 0);
     }
-    .fm-toast-success {
+    .fm-toast--icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30px;
-        height: 30px;
+        width: 8.333vw;
+        height: 8.333vw;
         border-radius: 50%;
-        margin-bottom: 6px;
+        margin-bottom: 1.667vw;
         background: #fff;
     }
     .fm-toast.fade-enter,
@@ -38,15 +38,15 @@
     }
     .fm-toast.fade-enter-active,
     .fm-toast.fade-leave-active {
-        transition: opacity 0.32s cubic-bezier(0.33, 0, 0.33, 1)
+        transition: opacity 0.32s cubic-bezier(0.33, 0, 0.33, 1);
     }
 </style>
 
 <template>
     <transition name="fade">
-        <div v-if="show" :class="[type]" class="fm-toast">
-            <div v-if="type" class="fm-toast-success">
-                <fm-icon :size="20" id="tick" color="#262626"></fm-icon>
+        <div v-if="show" :class="['fm-toast--' + type]" class="fm-toast">
+            <div v-if="type" class="fm-toast--icon">
+                <fm-icon :size="5.556" id="tick" color="#262626"></fm-icon>
             </div>
             {{content}}
         </div>
