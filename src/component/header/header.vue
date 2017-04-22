@@ -8,23 +8,23 @@
         z-index: 900;
         box-sizing: border-box;
         width: 100%;
-        height: 44px;
-        padding: 0 17px;
+        height: 12.222vw;
+        padding: 0 4.722vw;
     }
     .fm-header.underline {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 66.6%, transparent 66.6%) no-repeat bottom / 100% 1px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 66.6%, transparent 66.6%) no-repeat bottom / 100% 0.278vw;
     }
     .fm-header.statusbar {
-        height: 66px;
-        padding-top: 22px;
+        height: 18.333vw;
+        padding-top: 6.111vw;
     }
     .fm-header .fm-icon-back {
-        margin-right: 15px;
+        margin-right: 4.167vw;
     }
     .fm-header-title {
         flex: auto;
-        margin-right: 16px;
-        font-size: 16px;
+        margin-right: 4.444vw;
+        font-size: 4.444vw;
         font-weight: 500;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -37,7 +37,7 @@
 </style>
 
 <template>
-    <header class="fm-header" :class="{'underline': underline, 'statusbar': statusbar}" :style="headerStyle">
+    <header v-padding :class="{'underline': underline, 'statusbar': statusbar}" :style="headerStyle" class="fm-header">
         <fm-icon id="back" :color="color" @click.native="back"></fm-icon>
         <div class="fm-header-title">{{title}}</div>
         <div class="fm-header-button">
@@ -52,7 +52,6 @@
         components: {
             fmIcon
         },
-        data: () => ({}),
         props: {
             title: {
                 type: String,
@@ -80,6 +79,13 @@
                 return {
                     color: this.color,
                     backgroundColor: this.backgroundColor
+                }
+            }
+        },
+        directives: {
+            padding: {
+                inserted(el) {
+                    document.body.style.paddingTop = window.getComputedStyle(el).height;
                 }
             }
         },

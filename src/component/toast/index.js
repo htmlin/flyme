@@ -8,7 +8,7 @@ document.body.appendChild(vc_toast.$el);
 
 function show(content, type) {
     vc_toast.show = true;
-    vc_toast.content = content || '';
+    vc_toast.content = typeof content === 'string' ? content : '';
     vc_toast.type = typeof type === 'string' ? type : '';
     clearTimeout(time_handle);
     time_handle = setTimeout(() => {

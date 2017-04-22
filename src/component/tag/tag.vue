@@ -3,19 +3,19 @@
         flex: none;
         display: inline-flex;
         align-items: center;
-        border-radius: 1px;
-        height: 16px;
-        margin-right: 4px;
-        padding: 0 3px;
-        font-size: 10px;
+        border-radius: 0.37vw;
+        height: 4.444vw;
+        margin-right: 1.111vw;
+        padding: 0 0.833vw;
+        font-size: 2.778vw;
         font-weight: 700;
         color: #fff;
     }
     .fm-tag.small {
-        height: 12px;
-        margin-right: 2px;
-        padding: 0 2px;
-        font-size: 8px;
+        height: 3.333vw;
+        margin-right: 0.556vw;
+        padding: 0 0.556vw;
+        font-size: 2.222vw;
     }
 </style>
 
@@ -27,7 +27,6 @@
 
 <script>
     export default {
-        data: () => ({}),
         props: {
             size: {
                 type: String,

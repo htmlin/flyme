@@ -21,7 +21,7 @@
             },
             size: {
                 type: Number,
-                default: 24
+                default: 6.667
             },
             color: {
                 type: String,
@@ -41,8 +41,8 @@
             },
             iconStyle() {
                 return {
-                    width: `${this.size}px`,
-                    height: `${this.size}px`,
+                    width: `${this.size}vw`,
+                    height: `${this.size}vw`,
                     transform: `rotate(${this.rotate}deg)`,
                     fill: this.color
                 }
