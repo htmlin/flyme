@@ -12,11 +12,11 @@ this.$toast('Flyme UI');
 
 ### 状态提示
 
-![](/doc/img/toast/toast-success.png)
-
 ```javascript
 this.$toast('发送成功', 'success');
 ```
+
+![](/doc/img/toast/toast-success.png)
 
 ## Toast Parameters
 
