@@ -10,7 +10,7 @@
 this.$toast('Flyme UI');
 ```
 
-### 状态提示
+### 带状态提示
 
 ```javascript
 this.$toast('发送成功', 'success');
