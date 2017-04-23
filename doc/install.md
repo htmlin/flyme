@@ -8,7 +8,7 @@ npm install flyme-ui --save-dev
 
 ## webpack 配置
 
-我们建议你使用 webpack + vue 单文件组件进行开发，并确保 webpack 中包含以下配置项：
+我们建议你使用 webpack + vue 单文件组件进行开发，并确保 webpack 配置文件中包含以下内容：
 
 ```javascript
 module.exports = {

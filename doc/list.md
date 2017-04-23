@@ -2,7 +2,7 @@
 
 列表基础组件，可灵活自定义，更多高度封装列表组件详见：
 
-* [SwitchList 开关列表](doc/switch-list.md)
+* [SwitchList 开关列表](switch-list.md)
 
 ## List Snippets
 

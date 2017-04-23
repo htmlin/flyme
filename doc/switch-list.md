@@ -1,6 +1,6 @@
 # SwitchList 开关列表
 
-> 该组件基于 [List 列表](doc/list.md) 与 [Switch 开关](doc/switch.md) 组件封装
+> 该组件基于 [List 列表](list.md) 与 [Switch 开关](switch.md) 组件封装
 
 ## SwitchList Snippets
 
