@@ -10,15 +10,15 @@
 </fm-header>
 ```
 
-![](/doc/img/header/header.png)
+![](img/header.png)
 
 ## Header Props
 
-|  参数名称  |  描述  |  类型  |  默认值  | 可选值  |
+|  参数名称  |  描述  |  类型  |  默认值  |  可选值  |
 |  -----  |  -----  |  -----  |  -----  |  -----  |
 |  title  |  标题  |  String  |  document.title  |  --  |
 |  color  |  标题字体颜色  |  String  |  #666  |  --  |
-|  backgroundColor  |  标题栏背景颜色  |  String  |  #fff  |  --  |
+|  background-color  |  标题栏背景颜色  |  String  |  #fff  |  --  |
 |  underline  |  是否显示下划线  |  Boolean  |  true  |  true, false  |
 |  statusbar  |  是否预留状态栏位置  |  Boolean  |  true  |  true, false  |
 
@@ -32,4 +32,4 @@
 
 |  插槽名称  |  描述  |
 |  -----  |  -----  |
-|  --  |  添加标题栏右侧元素  |
+|  --  |  标题栏右侧元素插槽  |

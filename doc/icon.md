@@ -1,28 +1,19 @@
 # Icon 图标
 
+|  预设图标  |  图标 id  |  图标 class  |
+|  :---:  |  :---  |  :---  |
+|  ![](../src/component/icon/svg/back.svg)  |  back  |  fm-icon-back  |
+|  ![](../src/component/icon/svg/tick.svg)  |  tick  |  fm-icon-tick  |
+
 ## Tag Snippets
 
 ```html
 <fm-icon id="back" :color="#666"></fm-icon>
 ```
-预设图标列表：
-
-|  预设图标  |  图标 id  |  图标 class  |
-|  :---:  |  :---  |  :---  |
-|  ![](img/icon/arrow.png)  |  arrow  |  fm-icon-arrow  |
-|  ![](../src/component/icon/svg/back.svg)  |  back  |  fm-icon-back  |
-|  ![](img/icon/heart.png)  |  heart  |  fm-icon-heart  |
-|  ![](img/icon/heart-o.png)  |  heart-o  |  fm-icon-heart-o  |
-|  ![](img/icon/location.png)  |  location  |  fm-icon-location  |
-|  ![](img/icon/telephone.png)  |  telephone  |  fm-icon-telephone  |
-|  ![](../src/component/icon/svg/tick.svg)  |  tick  |  fm-icon-tick  |
-|  ![](img/icon/trash.png)  |  trash  |  fm-icon-trash  |
-|  ![](img/icon/triangle.png)  |  triangle  |  fm-icon-triangle  |
-|  ![](img/icon/volume.png)  |  volume  |  fm-icon-volume  |
 
 ## Icon Props
 
-|  参数  |  描述  |  类型  |  默认值  |  可选值  |
+|  参数名称  |  描述  |  类型  |  默认值  |  可选值  |
 |  ---  |  ---  |  ---  |  ---  |  ---  |
 |  id  |  图标 id  |  String  |  --  |  如上表所示  |
 |  size  |  图标显示尺寸（单位 vw）  |  Number  |  6.667  |  --  |
