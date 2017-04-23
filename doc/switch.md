@@ -3,7 +3,16 @@
 ## Switch Snippets
 
 ```html
-<fm-switch v-model="status"></fm-switch>
+<template>
+    <fm-switch v-model="status"></fm-switch>
+</template>
+<script>
+    export default {
+        data: () => ({
+            status: true
+        })
+    }
+</script>
 ```
 
 ![](img/switch.png)
