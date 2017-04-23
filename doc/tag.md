@@ -4,8 +4,6 @@
 
 ### 基础用法
 
-![](img/tag/tag.png)
-
 ```html
 <fm-tag>标签</fm-tag>
 <fm-tag color="#3bc06b">标签</fm-tag>
@@ -17,9 +15,9 @@
 <fm-tag color="#ffaf00">标签</fm-tag>
 ```
 
-### 小标签
+![](img/tag/tag.png)
 
-![](img/tag/tag-small.png)
+### 小标签
 
 ```html
 <fm-tag size="small">标签</fm-tag>
@@ -32,9 +30,11 @@
 <fm-tag size="small" color="#ffaf00">标签</fm-tag>
 ```
 
+![](img/tag/tag-small.png)
+
 ## Tag Props
 
 |  参数  |  描述  |  类型  |  默认值  | 可选值  |
 |  -----  |  -----  |  -----  |  -----  |  -----  |
-|  size  |  标签显示尺寸  |  String  |  --  |  small  |
 |  color  |  标签颜色  |  String  |  #198ded  |  --  |
+|  size  |  标签显示尺寸  |  String  |  --  |  small  |

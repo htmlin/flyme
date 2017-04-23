@@ -10,12 +10,12 @@
 |  预设图标  |  图标 id  |  图标 class  |
 |  :---:  |  :---  |  :---  |
 |  ![](img/icon/arrow.png)  |  arrow  |  fm-icon-arrow  |
-|  ![](img/icon/back.png)  |  back  |  fm-icon-back  |
+|  ![](../src/component/icon/svg/back.svg)  |  back  |  fm-icon-back  |
 |  ![](img/icon/heart.png)  |  heart  |  fm-icon-heart  |
 |  ![](img/icon/heart-o.png)  |  heart-o  |  fm-icon-heart-o  |
 |  ![](img/icon/location.png)  |  location  |  fm-icon-location  |
 |  ![](img/icon/telephone.png)  |  telephone  |  fm-icon-telephone  |
-|  ![](img/icon/tick.png)  |  tick  |  fm-icon-tick  |
+|  ![](../src/component/icon/svg/tick.svg)  |  tick  |  fm-icon-tick  |
 |  ![](img/icon/trash.png)  |  trash  |  fm-icon-trash  |
 |  ![](img/icon/triangle.png)  |  triangle  |  fm-icon-triangle  |
 |  ![](img/icon/volume.png)  |  volume  |  fm-icon-volume  |

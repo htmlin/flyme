@@ -1,25 +1,35 @@
 # Header 标题栏
 
-头部标题栏，支持 slot，使用该组件会在 `body` 元素上加上与标题栏等高的上内边距：
+> 使用该组件会在 `body` 元素上加上与标题栏等高的上内边距。
+
+## Header Snippets
 
 ```html
-<fm-header title="标题">
-    <!-- 自定义内容，放置标题栏右侧 -->
+<fm-header :statusbar="false" title="Flyme UI - 标题栏">
+    <div style="font-size: 4.444vw; font-weight: 500; color: #f12528;">完成</div>
 </fm-header>
 ```
 
-## Header Attributes
+![](/doc/img/header/header.png)
 
-|  参数  |  描述  |  类型  |  默认值  | 可选值  |
+## Header Props
+
+|  参数名称  |  描述  |  类型  |  默认值  | 可选值  |
 |  -----  |  -----  |  -----  |  -----  |  -----  |
 |  title  |  标题  |  String  |  document.title  |  --  |
 |  color  |  标题字体颜色  |  String  |  #666  |  --  |
 |  backgroundColor  |  标题栏背景颜色  |  String  |  #fff  |  --  |
-|  underline  |  是否要标题栏下划线  |  Boolean  |  true  |  true, false  |
-|  statusbar  |  是否要预留状态栏位置  |  Boolean  |  true  |  true, false  |
+|  underline  |  是否显示下划线  |  Boolean  |  true  |  true, false  |
+|  statusbar  |  是否预留状态栏位置  |  Boolean  |  true  |  true, false  |
 
 ## Header Events
 
 |  事件名称  |  描述  |  参数  |
 |  -----  |  -----  |  -----  |
 |  back  |  点击返回图标时触发  |  --  |
+
+## Header Slots
+
+|  插槽名称  |  描述  |
+|  -----  |  -----  |
+|  --  |  添加标题栏右侧元素  |
