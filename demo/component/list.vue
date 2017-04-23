@@ -7,13 +7,12 @@
         <fm-list>
             <fm-list-item title="无标题列表"></fm-list-item>
             <fm-list-item title="带辅助信息" content="列表描述信息" desc="额外的描述信息"></fm-list-item>
-            <fm-list-item title="带描述段落" content="列表描述信息列表描述信息列表描述信息列表描述信息列表描述信息列表描述信息.."></fm-list-item>
         </fm-list>
-        <fm-list title="带额外元素列表">
+        <fm-list title="带右侧元素列表">
             <fm-list-item title="标题">
                 <fm-icon :size="5" id="tick" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>
-            <fm-list-item title="带描述带额外元素" content="列表描述信息列表描述信息列表描述信息列表描述信息列表描述信息列表描述信息..">
+            <fm-list-item title="带描述段落" content="列表描述信息列表描述信息列表描述信息列表描述信息列表描述信息列表描述信息..">
                 <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>
         </fm-list>
@@ -28,11 +27,26 @@
                 <div style="width: 11.112vw; height: 11.112vw; border-radius: 50%; background: #198ded;" slot="left"></div>
             </fm-list-item>
         </fm-list>
+        <fm-switch-list :data="options" :title="options[0].switch ? '开关列表' : ''" :underline="options[1].switch" :active-effect="options[2].switch"></fm-switch-list>
     </div>
 </template>
 
 <script>
     export default {
+        data: () => ({
+            options: [
+                {
+                    name: '是否含有标题',
+                    switch: true
+                }, {
+                    name: '是否带下划线',
+                    switch: true
+                }, {
+                    name: '是否含有点击效果',
+                    switch: false
+                }
+            ]
+        }),
         methods: {
             back() {
                 history.back();

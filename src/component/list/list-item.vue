@@ -8,9 +8,6 @@
         background-color: #fff;
         transition: background-color 0.2s;
     }
-    .fm-list-item:active {
-        background-color: #f2f2f2;
-    }
     .fm-list-item > :first-child:not(.fm-list-item--wrapper) {
         flex: none;
         margin-right: 4.444vw;
@@ -26,12 +23,6 @@
     }
     .fm-list-item--wrapper:not(:first-child) {
         padding-left: 0;
-    }
-    .underline .fm-list-item + .fm-list-item .fm-list-item--wrapper {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 66.6%, transparent 66.6%);
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: 100% 0.278vw;
     }
     .fm-list-item--main {
         flex: auto;
@@ -61,6 +52,17 @@
     .fm-list-item--desc {
         margin-top: 0.833vw;
         font-size: 3.889vw;
+    }
+    /* 下划线 */
+    .fm-list--underline .fm-list-item + .fm-list-item .fm-list-item--wrapper {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 66.6%, transparent 66.6%);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 0.278vw;
+    }
+    /* 点击效果 */
+    .fm-list--active .fm-list-item:active {
+        background-color: #f2f2f2;
     }
 </style>
 

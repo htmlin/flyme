@@ -16,7 +16,7 @@
 </style>
 
 <template>
-    <dl :class="{'underline': underline}" class="fm-list">
+    <dl :class="{'fm-list--underline': underline, 'fm-list--active': activeEffect}" class="fm-list">
         <dt v-if="title" class="fm-list--title">{{title}}</dt>
         <slot></slot>
     </dl>
@@ -29,6 +29,10 @@
                 type: String
             },
             underline: {
+                type: Boolean,
+                default: true
+            },
+            activeEffect: {
                 type: Boolean,
                 default: true
             }

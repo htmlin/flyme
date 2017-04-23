@@ -2,6 +2,7 @@
 import Header from './component/header';
 import Icon from './component/icon';
 import List from './component/list';
+import Switch from './component/switch';
 import Tag from './component/tag';
 
 // 实例方法
@@ -12,6 +13,8 @@ const flyme = {
     Icon,
     List: List.List,
     ListItem: List.ListItem,
+    SwitchList: List.SwitchList,
+    Switch,
     Tag
 }
 

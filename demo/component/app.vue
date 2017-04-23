@@ -26,6 +26,12 @@
             <fm-list-item @click.native="routerPush('list')" title="列表">
                 <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>
+            <fm-list-item @click.native="routerPush('control')" title="控件">
+                <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
+            </fm-list-item>
+            <fm-list-item @click.native="routerPush('header')" title="标题栏">
+                <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
+            </fm-list-item>
             <fm-list-item @click.native="routerPush('other')" title="其他">
                 <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>

@@ -28,7 +28,7 @@
         align-items: center;
         width: 8.333vw;
         height: 8.333vw;
-        border-radius: 50%;
+        border-radius: 51%;
         margin-bottom: 1.667vw;
         background: #fff;
     }
