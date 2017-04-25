@@ -7,6 +7,7 @@ import Tag from './component/tag';
 
 // 实例方法
 import Toast from './component/toast';
+import Waiting from './component/waiting';
 
 const flyme = {
     Header,
@@ -28,5 +29,6 @@ export default {
 
         // 添加实例方法
         Vue.prototype.$toast = Toast;
+        Vue.prototype.$waiting = Waiting;
     }
 }

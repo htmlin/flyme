@@ -3,6 +3,7 @@
         position: fixed;
         bottom: 18.75%;
         left: 50%;
+        z-index: 990;
         display: flex;
         justify-content: center;
         align-items: center;
