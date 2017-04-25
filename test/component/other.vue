@@ -10,7 +10,10 @@
         <fm-list :underline="false" title="Icon 图标" class="icon">
             <fm-list-item>
                 <fm-icon id="back"></fm-icon>
+                <fm-icon id="home"></fm-icon>
+                <fm-icon id="more"></fm-icon>
                 <fm-icon id="tick"></fm-icon>
+                <fm-icon id="user"></fm-icon>
             </fm-list-item>
         </fm-list>
         <fm-list title="Tag 标签">
