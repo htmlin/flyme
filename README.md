@@ -4,9 +4,11 @@
 
 > 一套基于 Vue.js 的响应式移动端 UI 组件库
 
-## 使用文档
+## 使用
 
-[中文文档](https://fedesigner.gitbooks.io/flyme/content/doc/install.html)
+[API 文档](https://fedesigner.gitbooks.io/flyme/content/doc/install.html)
+
+[在线 Demo](https://fedesigner.github.io/flyme/demo)
 
 ## 开发
 
