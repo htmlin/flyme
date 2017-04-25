@@ -4,7 +4,8 @@
   "description": "一套基于 Vue.js 的响应式移动端 UI 组件库",
   "main": "src/index.js",
   "scripts": {
-    "test": "webpack-dev-server --progress --config build/webpack.dev.js"
+    "test": "webpack-dev-server --progress --config build/webpack.dev.js",
+    "start": "rd/s/q demo && webpack --progress --config build/webpack.demo.js"
   },
   "repository": {
     "type": "git",
