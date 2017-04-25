@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -14,6 +15,7 @@ module.exports = webpackMerge(commonConfig, {
         filename: '[name]_[hash:8].js'
     },
     plugins: [
+        new webpack.optimize.UglifyJsPlugin(),
         new HtmlWebpackPlugin({
             title: 'Flyme Design',
             template: 'test/index.html',
