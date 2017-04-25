@@ -5,7 +5,7 @@ const commonConfig = require('./webpack.base.js');
 
 module.exports = webpackMerge(commonConfig, {
     entry: {
-        'index': './demo/index'
+        'index': './test/index'
     },
     output: {
         publicPath: '/',
@@ -14,7 +14,7 @@ module.exports = webpackMerge(commonConfig, {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Flyme Design',
-            template: 'demo/index.html',
+            template: 'test/index.html',
             filename: 'index.html',
             chunks: ['index']
         })
