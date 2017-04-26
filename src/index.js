@@ -9,6 +9,9 @@ import Tag from './component/tag';
 import Toast from './component/toast';
 import Waiting from './component/waiting';
 
+// 自定义指令
+import Loading from './component/loading';
+
 const flyme = {
     Header,
     Icon,
@@ -30,5 +33,8 @@ export default {
         // 添加实例方法
         Vue.prototype.$toast = Toast;
         Vue.prototype.$waiting = Waiting;
+
+        // 添加自定义指令
+        Vue.directive('loading', Loading);
     }
 }

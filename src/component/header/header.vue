@@ -85,10 +85,10 @@
         directives: {
             padding: {
                 inserted(el) {
-                    document.body.style.paddingTop = `${el.offsetHeight * 100 / screen.width}vw`;
+                    document.body.style.paddingTop = `${el.offsetHeight * 100 / window.innerWidth}vw`;
                 },
                 update(el) {
-                    document.body.style.paddingTop = `${el.offsetHeight * 100 / screen.width}vw`;
+                    document.body.style.paddingTop = `${el.offsetHeight * 100 / window.innerWidth}vw`;
                 },
                 unbind() {
                     document.body.style.paddingTop = 0;
