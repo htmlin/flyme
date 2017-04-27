@@ -1,5 +1,6 @@
 <style>
     .fm-switch {
+        flex: none;
         display: inline-flex;
         align-items: center;
         box-sizing: border-box;

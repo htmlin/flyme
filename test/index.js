@@ -8,6 +8,7 @@ import app from './component/app.vue';
 import control from './component/control.vue';
 import header from './component/header.vue';
 import list from './component/list.vue';
+import prompt from './component/prompt.vue';
 import other from './component/other.vue';
 
 Vue.use(VueRouter);
@@ -20,6 +21,9 @@ const routes = [
     }, {
         path: '/list',
         component: list
+    }, {
+        path: '/prompt',
+        component: prompt
     }, {
         path: '/control',
         component: control

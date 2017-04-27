@@ -1,4 +1,5 @@
 // 公共组件
+import Button from './component/button';
 import Header from './component/header';
 import Icon from './component/icon';
 import List from './component/list';
@@ -14,6 +15,7 @@ import Waiting from './component/waiting';
 import Loading from './component/loading';
 
 const flyme = {
+    Button,
     Header,
     Icon,
     List: List.List,

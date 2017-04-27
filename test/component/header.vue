@@ -13,7 +13,7 @@
                 </fm-list-item>
             </fm-menu>
         </fm-header>
-        <fm-switch-list :data="options" title="Header Props"></fm-switch-list>
+        <fm-switch-list :data="options" title="Header"></fm-switch-list>
     </div>
 </template>
 
