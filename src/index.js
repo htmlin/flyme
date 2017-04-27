@@ -2,6 +2,7 @@
 import Header from './component/header';
 import Icon from './component/icon';
 import List from './component/list';
+import Menu from './component/menu';
 import Switch from './component/switch';
 import Tag from './component/tag';
 
@@ -17,6 +18,7 @@ const flyme = {
     Icon,
     List: List.List,
     ListItem: List.ListItem,
+    Menu,
     SwitchList: List.SwitchList,
     Switch,
     Tag
