@@ -33,18 +33,18 @@
         margin-bottom: 1.667vw;
         background: #fff;
     }
-    .fm-toast.fade-enter,
-    .fm-toast.fade-leave-active {
+    .fm-toast--fade-enter,
+    .fm-toast--fade-leave-active {
         opacity: 0;
     }
-    .fm-toast.fade-enter-active,
-    .fm-toast.fade-leave-active {
+    .fm-toast--fade-enter-active,
+    .fm-toast--fade-leave-active {
         transition: opacity 0.32s cubic-bezier(0.33, 0, 0.33, 1);
     }
 </style>
 
 <template>
-    <transition name="fade">
+    <transition name="fm-toast--fade">
         <div v-if="show" :class="['fm-toast--' + type]" class="fm-toast">
             <div v-if="type" class="fm-toast--icon">
                 <fm-icon :size="5.556" id="tick" color="#262626"></fm-icon>

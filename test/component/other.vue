@@ -46,11 +46,19 @@
             <fm-list-item @click.native="showWaiting" title="用户可关闭"></fm-list-item>
             <fm-list-item @click.native="$waiting.show('Flyme UI', false)" title="用户不可关闭（慎点）"></fm-list-item>
         </fm-list>
+        <fm-list v-loading="true" :underline="false" title="Loading 等待">
+            <fm-list-item></fm-list-item>
+            <fm-list-item></fm-list-item>
+        </fm-list>
     </div>
 </template>
 
 <script>
     export default {
+        data: function () {
+            return {
+            }
+        },
         methods: {
             back() {
                 history.back();
