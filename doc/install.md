@@ -28,7 +28,7 @@ module.exports = {
                 ]
             }, {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                include: /(src|node_modules\/flyme-ui)/, // src 可替换为项目对应源码目录
                 use: [
                     {
                         loader: 'babel-loader',
