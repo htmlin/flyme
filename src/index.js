@@ -9,6 +9,7 @@ import Switch from './component/switch';
 import Tag from './component/tag';
 
 // 实例方法
+import Dialog from './component/dialog';
 import Toast from './component/toast';
 import Waiting from './component/waiting';
 
@@ -23,6 +24,7 @@ const flyme = {
     List: List.List,
     ListItem: List.ListItem,
     Menu,
+    RadioList: List.RadioList,
     SwitchList: List.SwitchList,
     Switch,
     Tag
@@ -37,6 +39,8 @@ export default {
         });
 
         // 添加实例方法
+        Vue.prototype.$alert = Dialog.alert;
+        Vue.prototype.$confirm = Dialog.confirm;
         Vue.prototype.$toast = Toast;
         Vue.prototype.$waiting = Waiting;
 

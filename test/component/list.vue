@@ -27,6 +27,7 @@
                 <div style="width: 11.112vw; height: 11.112vw; border-radius: 50%; background: #198ded;" slot="left"></div>
             </fm-list-item>
         </fm-list>
+        <fm-radio-list v-model="radio" :data="['选项一', '选项二']" title="单选列表"></fm-radio-list>
         <fm-switch-list :data="options" :title="options[0].switch ? '开关列表' : ''" :underline="options[1].switch" :active-effect="options[2].switch"></fm-switch-list>
     </div>
 </template>
@@ -45,8 +46,14 @@
                     name: '是否含有点击效果',
                     switch: false
                 }
-            ]
+            ],
+            radio: ''
         }),
+        watch: {
+            'radio': function (val) {
+                this.$toast(val);
+            }
+        },
         methods: {
             back() {
                 history.back();

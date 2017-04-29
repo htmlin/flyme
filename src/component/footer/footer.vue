@@ -9,9 +9,9 @@
         left: 0;
         box-sizing: border-box;
         height: 15vw;
-        background: #fff linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 66.6%, transparent 66.6%) no-repeat top / 100% 0.278vw;;
+        background: #fff linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 66.6%, transparent 66.6%) no-repeat top / 100% 0.278vw;
     }
-    .fm-footer--none {
+    .fm-footer-- {
         justify-content: center;
     }
     .fm-footer--mini {
@@ -36,13 +36,16 @@
         props: {
             paddingSize: {
                 type: String,
-                default: 'none'
+                default: ''
             }
         },
         directives: {
             padding: {
                 inserted(el) {
                     document.body.style.paddingBottom = `${el.offsetHeight * 100 / window.innerWidth}vw`;
+                },
+                unbind() {
+                    document.body.style.paddingBottom = 0;
                 }
             }
         }
