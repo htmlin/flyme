@@ -29,8 +29,8 @@
             <fm-list-item title="圆型按钮">
                 <template slot="right">
                     <fm-Button :disabled="true" type="circle" icon="back"></fm-Button>
-                <fm-Button type="circle" icon="home" color="#f12528"></fm-Button>
-                <fm-Button type="circle" icon="user" color="#ffaf00"></fm-Button>
+                    <fm-Button type="circle" icon="home" color="#f12528"></fm-Button>
+                    <fm-Button type="circle" icon="user" color="#ffaf00"></fm-Button>
                 </template>
             </fm-list-item>
         </fm-list>

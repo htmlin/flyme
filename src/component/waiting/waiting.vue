@@ -146,23 +146,30 @@
             show: false,
             text: '',
             cancelable: true,
-            callback: null
+            isUser: false,
+            resolve: null,
+            reject: null
         }),
         watch: {
             'show': function (val) {
-                if (!val) {
-                    if (typeof this.callback === 'function') {
-                        this.callback();
-                    }
-                    this.cancelable = true;
-                    this.callback = null;
+                if (val) {
+                    history.pushState(null, '', '');
+                    window.addEventListener('popstate', this.popstateEvent);
+                } else {
+                    window.removeEventListener('popstate', this.popstateEvent);
                 }
             }
         },
         methods: {
             hide() {
-                if (this.cancelable) {
-                    history.back();
+                history.back();
+            },
+            popstateEvent() {
+                if (this.cancelable === false) {
+                    history.pushState(null, '', '');
+                } else {
+                    this.show = false;
+                    this.isUser ? this.reject() : this.resolve();
                 }
             }
         }

@@ -86,7 +86,6 @@
 <script>
     export default {
         data: () => ({
-            result: false,
             show: false,
             title: '',
             okText: '',
@@ -106,7 +105,7 @@
         },
         methods: {
             ok() {
-                this.result = true;
+                this.resolve();
                 history.back();
             },
             cancel() {
@@ -114,8 +113,7 @@
             },
             popstateEvent() {
                 this.show = false;
-                this.result ? this.resolve() : this.reject();
-                this.result = false;
+                this.reject();
             }
         }
     }

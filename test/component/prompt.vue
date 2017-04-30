@@ -16,8 +16,8 @@
             <fm-list-item @click.native="$toast('发送成功', 'success')" title="Complete Toast"></fm-list-item>
         </fm-list>
         <fm-list title="Waiting 等待">
-            <fm-list-item @click.native="showWaiting" title="用户可关闭"></fm-list-item>
-            <fm-list-item @click.native="$waiting.show('Flyme UI', false)" title="用户不可关闭（慎点）"></fm-list-item>
+            <fm-list-item @click.native="showWaiting(true)" title="用户可关闭"></fm-list-item>
+            <fm-list-item @click.native="showWaiting(false)" title="用户不可关闭（慎点）"></fm-list-item>
         </fm-list>
         <fm-list v-loading="true" :underline="false" title="Loading 等待">
             <fm-list-item></fm-list-item>
@@ -51,9 +51,11 @@
                     this.$toast('已取消');
                 });
             },
-            showWaiting() {
-                this.$waiting.show('Flyme UI', () => {
-                    this.$toast('触发了回调');
+            showWaiting(cancelable) {
+                this.$waiting.show('Flyme UI', cancelable).then(() => {
+                    this.$toast('程序取消');
+                }, () => {
+                    this.$toast('用户取消');
                 });
             }
         }
