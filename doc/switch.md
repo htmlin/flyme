@@ -21,7 +21,7 @@
 
 | 指令名称 | 描述 | 类型 |
 | ----- | ----- | ----- |
-| v-model | 开关开启状态 | Boolean |
+| v-model | 开关是否开启 | Boolean |
 
 ## Switch Props
 

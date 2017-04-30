@@ -58,5 +58,8 @@ Vue.use(FlymeUI);
 </script>
 ```
 
+## 建议
 
+* 由于我们在 css 中使用 `vw / vh / vmin / vmax` 单位以更好地支持响应式布局，因此我们也建议您使用 `vw / vh / vmin / vmax` 作为 css 布局单位，必要时可以配合 `%`，但不建议您使用 `px / em / rem`。
 
+* 盒模型尽可能使用 `border-box`

@@ -1,5 +1,6 @@
 // 公共组件
 import Button from './component/button';
+import Footer from './component/footer';
 import Header from './component/header';
 import Icon from './component/icon';
 import List from './component/list';
@@ -8,6 +9,7 @@ import Switch from './component/switch';
 import Tag from './component/tag';
 
 // 实例方法
+import Dialog from './component/dialog';
 import Toast from './component/toast';
 import Waiting from './component/waiting';
 
@@ -16,11 +18,13 @@ import Loading from './component/loading';
 
 const flyme = {
     Button,
+    Footer,
     Header,
     Icon,
     List: List.List,
     ListItem: List.ListItem,
     Menu,
+    RadioList: List.RadioList,
     SwitchList: List.SwitchList,
     Switch,
     Tag
@@ -35,6 +39,8 @@ export default {
         });
 
         // 添加实例方法
+        Vue.prototype.$alert = Dialog.alert;
+        Vue.prototype.$confirm = Dialog.confirm;
         Vue.prototype.$toast = Toast;
         Vue.prototype.$waiting = Waiting;
 

@@ -38,6 +38,6 @@
 | underline | 是否显示列表项下划线 | Boolean | true | true, false |
 | active-effect | 是否显示列表项点击效果 | Boolean | false | true, false |
 | color | 开关颜色 | String | #198ded | -- |
-| data | 开关列表数据数组 | Array | -- | -- |
+| data | 开关列表数据数组，数据默认双向绑定 | Array | -- | -- |
 | prop-name | 列表项标题字段名 | String | name | -- |
 | prop-switch | 列表项开关状态字段名 | String | switch | -- |

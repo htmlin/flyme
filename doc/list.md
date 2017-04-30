@@ -2,6 +2,8 @@
 
 列表基础组件，可灵活自定义，更多高度封装列表组件详见：
 
+* [RadioList 单选列表](radio-list.md)
+
 * [SwitchList 开关列表](switch-list.md)
 
 ## List Snippets

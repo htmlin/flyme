@@ -5,33 +5,24 @@ let VCWaiting = Vue.extend(Waiting);
 let vc_waiting = new VCWaiting().$mount();
 document.body.appendChild(vc_waiting.$el);
 
-function show(text, cancelable, callback) {
-    vc_waiting.text = typeof text === 'string' ? text : '';
-    vc_waiting.show = true;
-    if (typeof cancelable === 'boolean') {
-        vc_waiting.cancelable = cancelable;
-        if (typeof callback === 'function') {
-            vc_waiting.callback = callback;
-        }
-    } else if (typeof cancelable === 'function') {
-        vc_waiting.callback = cancelable;
-    }
-    history.pushState(null, '', '');
-    window.onpopstate = () => {
+function show(text, cancelable) {
+    return new Promise((resolve, reject) => {
+        vc_waiting.text = text;
         if (cancelable === false) {
-            history.pushState(null, '', '');
+            vc_waiting.cancelable = false;
         } else {
-            vc_waiting.show = false;
-            window.onpopstate = null;
+            vc_waiting.cancelable = true;
+            vc_waiting.isUser = true;
         }
-    }
+        vc_waiting.show = true;
+        vc_waiting.resolve = resolve;
+        vc_waiting.reject = reject;
+    });
 }
 
 function hide() {
-    if (!this.cancelable) {
-        vc_waiting.show = false;
-        window.onpopstate = null;
-    }
+    vc_waiting.cancelable = true;
+    vc_waiting.isUser = false;
     history.back();
 }
 

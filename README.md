@@ -4,15 +4,27 @@
 
 > 一套基于 Vue.js 的响应式移动端 UI 组件库
 
+## 特性
+
+* 响应式的组件设计
+
+* 媲美 Native 的动画效果
+
+* [完整的使用文档](https://fedesigner.gitbooks.io/flyme/content/doc/install.html)
+
 ## 使用
 
-[API 文档](https://fedesigner.gitbooks.io/flyme/content/doc/install.html)
+[使用文档](https://fedesigner.gitbooks.io/flyme/content/doc/install.html)
 
 [在线 Demo](https://fedesigner.github.io/flyme/demo)
 
+## 兼容
+
+* Vue.js 2.1.0 +
+
 ## 开发
 
-安装依赖：
+`git clone` 并安装依赖：
 
 ```
 npm install
