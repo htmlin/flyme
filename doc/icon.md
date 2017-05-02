@@ -3,10 +3,17 @@
 | 预设图标 | 图标 id | 图标 class |
 | :---: | :---- | :---- |
 | ![](../src/component/icon/svg/back.svg) | back | fm-icon-back |
+| ![](../src/component/icon/svg/clock.svg) | clock | fm-icon-clock |
+| ![](../src/component/icon/svg/close.svg) | close | fm-icon-close |
+| ![](../src/component/icon/svg/edit.svg) | edit | fm-icon-edit |
 | ![](../src/component/icon/svg/home.svg) | home | fm-icon-home |
+| ![](../src/component/icon/svg/info.svg) | info | fm-icon-info |
 | ![](../src/component/icon/svg/more.svg) | more | fm-icon-more |
+| ![](../src/component/icon/svg/plus.svg) | plus | fm-icon-plus |
 | ![](../src/component/icon/svg/tick.svg) | tick | fm-icon-tick |
+| ![](../src/component/icon/svg/trash.svg) | trash | fm-icon-trash |
 | ![](../src/component/icon/svg/user.svg) | user | fm-icon-user |
+| ![](../src/component/icon/svg/volume.svg) | volume | fm-icon-volume |
 
 ## Icon Snippets
 

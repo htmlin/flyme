@@ -28,23 +28,23 @@
                 <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>
             <fm-list-item @click.native="routerPush('control')" title="控件">
-                <fm-icon id="home" slot="left"></fm-icon>
+                <fm-icon id="volume" slot="left"></fm-icon>
                 <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>
             <fm-list-item @click.native="routerPush('header')" title="标题栏">
-                <fm-icon id="home" slot="left"></fm-icon>
+                <fm-icon id="close" slot="left"></fm-icon>
                 <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>
             <fm-list-item @click.native="routerPush('footer')" title="底栏">
-                <fm-icon id="home" slot="left"></fm-icon>
+                <fm-icon id="user" slot="left"></fm-icon>
                 <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>
             <fm-list-item @click.native="routerPush('prompt')" title="提示">
-                <fm-icon id="home" slot="left"></fm-icon>
+                <fm-icon id="info" slot="left"></fm-icon>
                 <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>
             <fm-list-item @click.native="routerPush('other')" title="其他">
-                <fm-icon id="home" slot="left"></fm-icon>
+                <fm-icon id="more" slot="left"></fm-icon>
                 <fm-icon :size="5" :rotate="180" id="back" color="#b2b2b2" slot="right"></fm-icon>
             </fm-list-item>
         </fm-list>
