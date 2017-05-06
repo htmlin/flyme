@@ -5,6 +5,7 @@ import Header from './component/header';
 import Icon from './component/icon';
 import List from './component/list';
 import Menu from './component/menu';
+import Plate from './component/plate';
 import Switch from './component/switch';
 import Tag from './component/tag';
 
@@ -24,6 +25,7 @@ const flyme = {
     List: List.List,
     ListItem: List.ListItem,
     Menu,
+    Plate,
     RadioList: List.RadioList,
     SwitchList: List.SwitchList,
     Switch,

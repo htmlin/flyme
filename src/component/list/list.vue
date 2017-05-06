@@ -1,7 +1,7 @@
 <style>
     .fm-list {
         margin: 0;
-        background: #f5f5f5;
+        background: #f2f2f2;
     }
     .fm-list--title {
         display: flex;

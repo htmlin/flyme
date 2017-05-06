@@ -68,6 +68,13 @@
                 </div>
             </fm-list-item>
         </fm-list>
+        <fm-plate title="区块标题">
+            <div slot="subtitle">副标题</div>
+            <fm-list :active-effect="false">
+                <fm-list-item title="区块内容">
+                </fm-list-item>
+            </fm-list>
+        </fm-plate>
         <fm-list :active-effect="false" title="Tag 标签">
             <fm-list-item>
                 <fm-tag>标签</fm-tag>
