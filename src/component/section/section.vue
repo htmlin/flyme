@@ -41,7 +41,7 @@
     <div :class="{'fm-section--separate': separate}" class="fm-section">
         <div :class="{'fm-section--underline': underline}" class="fm-section--wrapper">
             <div :style="{'border-color': color}" class="fm-section--title">{{title}}</div>
-            <div :style="{'color': color}" class="fm-section--subtitle">
+            <div @click="subtitleClick" :style="{'color': color}" class="fm-section--subtitle">
                 <slot name="subtitle"></slot>
             </div>
         </div>
@@ -67,6 +67,11 @@
             separate: {
                 type: Boolean,
                 default: true
+            }
+        },
+        methods: {
+            subtitleClick(event) {
+                this.$emit('click', event);
             }
         }
     }
