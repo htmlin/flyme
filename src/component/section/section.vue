@@ -1,13 +1,13 @@
 <style>
-    .fm-plate {
+    .fm-section {
         padding-top: 3.889vw;
         background: #f2f2f2;
         background: #fff no-repeat top / 100% 3.889vw;
     }
-    .fm-plate--separate {
+    .fm-section--separate {
         background-image: linear-gradient(#f2f2f2, #f2f2f2);
     }
-    .fm-plate--wrapper {
+    .fm-section--wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,13 +15,13 @@
         padding: 0 4.444vw;
         font-weight: 500;
     }
-    .fm-plate--underline {
+    .fm-section--underline {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 66.6%, transparent 66.6%);
         background-repeat: no-repeat;
         background-position: 4.444vw bottom;
         background-size: 91.112vw 0.278vw;
     }
-    .fm-plate--title {
+    .fm-section--title {
         display: flex;
         align-items: center;
         height: 4.444vw;
@@ -30,7 +30,7 @@
         font-size: 4.444vw;
         color: #000;
     }
-    .fm-plate--subtitle {
+    .fm-section--subtitle {
         display: flex;
         align-items: center;
         font-size: 3.889vw;
@@ -38,10 +38,10 @@
 </style>
 
 <template>
-    <div :class="{'fm-plate--separate': separate}" class="fm-plate">
-        <div :class="{'fm-plate--underline': underline}" class="fm-plate--wrapper">
-            <div :style="{'border-color': color}" class="fm-plate--title">{{title}}</div>
-            <div :style="{'color': color}" class="fm-plate--subtitle">
+    <div :class="{'fm-section--separate': separate}" class="fm-section">
+        <div :class="{'fm-section--underline': underline}" class="fm-section--wrapper">
+            <div :style="{'border-color': color}" class="fm-section--title">{{title}}</div>
+            <div :style="{'color': color}" class="fm-section--subtitle">
                 <slot name="subtitle"></slot>
             </div>
         </div>

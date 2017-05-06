@@ -26,7 +26,7 @@
 
 * [Menu 菜单](doc/menu.md)
 
-* [Plate 板块](doc/plate.md)
+* [Section 版块](doc/section.md)
 
 * [Switch 开关](doc/switch.md)
 
