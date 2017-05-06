@@ -102,6 +102,7 @@
         },
         methods: {
             buttonClick(event) {
+                event.stopPropagation();
                 if (!this.disabled) {
                     this.$emit('click', event);
                 }
