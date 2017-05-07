@@ -1,5 +1,6 @@
 // 公共组件
 import Button from './component/button';
+import Checkbox from './component/checkbox';
 import Footer from './component/footer';
 import Header from './component/header';
 import Icon from './component/icon';
@@ -19,6 +20,7 @@ import Loading from './component/loading';
 
 const flyme = {
     Button,
+    Checkbox,
     Footer,
     Header,
     Icon,
