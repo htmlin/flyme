@@ -12,6 +12,8 @@
 
 * [Button 按钮](doc/button.md)
 
+* [Checkbox 多选框](doc/checkbox.md)
+
 * [Footer 底栏](doc/footer.md)
 
 * [Header 标题栏](doc/header.md)

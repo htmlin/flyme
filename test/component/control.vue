@@ -34,6 +34,14 @@
                 </template>
             </fm-list-item>
         </fm-list>
+        <fm-list :active-effect="false" title="Checkbox">
+            <fm-list-item title="多选框">
+                <fm-checkbox v-model="checkox[0]" slot="right"></fm-checkbox>
+            </fm-list-item>
+            <fm-list-item title="多选框">
+                <fm-checkbox v-model="checkox[1]" slot="right">带文字</fm-checkbox>
+            </fm-list-item>
+        </fm-list>
         <fm-switch-list :data="options" title="Switch"></fm-switch-list>
     </div>
 </template>
@@ -49,7 +57,8 @@
                     name: '开关',
                     switch: false
                 }
-            ]
+            ],
+            checkox: [false, true]
         }),
         methods: {
             back() {
