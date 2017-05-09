@@ -44,7 +44,7 @@
 
 <template>
     <div class="fm-menu">
-        <fm-icon @click.native="hide" id="more"></fm-icon>
+        <fm-icon @click.native="hide" id="more" color="#666"></fm-icon>
         <div v-if="show" @click="hide" class="fm-menu--background"></div>
         <transition name="fm-menu--transition">
             <fm-list v-if="show">
