@@ -15,13 +15,15 @@
         height: 6.667vw;
         border: 0.556vw solid #d9d9d9;
         border-radius: 51%;
+    }
+    .fm-checkbox--circle-margin {
         margin-right: 2.222vw;
     }
 </style>
 
 <template>
     <div @click="toggle($event)" class="fm-checkbox">
-        <div :style="checkboxStyle" class="fm-checkbox--circle">
+        <div :class="{'fm-checkbox--circle-margin': $slots.default}" :style="checkboxStyle" class="fm-checkbox--circle">
             <fm-icon v-show="value" :size="5" id="tick" color="#fff"></fm-icon>
         </div>
         <slot></slot>
