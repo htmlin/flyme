@@ -7,7 +7,7 @@ let vc_toast = new VCToast().$mount();
 document.body.appendChild(vc_toast.$el);
 
 function show(content, type) {
-    vc_toast.content = typeof content === 'string' ? content : '';
+    vc_toast.content = content.toString();
     vc_toast.type = typeof type === 'string' ? type : '';
     vc_toast.show = true;
     clearTimeout(time_handle);

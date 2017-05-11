@@ -18,7 +18,7 @@
 ## Icon Snippets
 
 ```html
-<fm-icon id="back" :color="#666"></fm-icon>
+<fm-icon id="back" color="#666"></fm-icon>
 ```
 
 ## Icon Props
