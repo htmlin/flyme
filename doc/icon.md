@@ -5,6 +5,7 @@
 | ![](../src/component/icon/svg/back.svg) | back | fm-icon-back |
 | ![](../src/component/icon/svg/clock.svg) | clock | fm-icon-clock |
 | ![](../src/component/icon/svg/close.svg) | close | fm-icon-close |
+| ![](../src/component/icon/svg/document.svg) | document | fm-icon-document |
 | ![](../src/component/icon/svg/edit.svg) | edit | fm-icon-edit |
 | ![](../src/component/icon/svg/home.svg) | home | fm-icon-home |
 | ![](../src/component/icon/svg/info.svg) | info | fm-icon-info |
@@ -29,10 +30,3 @@
 | size | 图标显示尺寸（单位 vw） | Number | 6.667 | -- |
 | color | 图标颜色 | String | #000 | -- |
 | rotate | 图标顺时针旋转的角度值 | Number | 0 | -- |
-
-
-
-
-
-
-
