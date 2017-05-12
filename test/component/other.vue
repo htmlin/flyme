@@ -27,11 +27,15 @@
                     <div>close</div>
                 </div>
                 <div>
-                    <fm-icon id="edit"></fm-icon>
-                    <div>edit</div>
+                    <fm-icon id="document"></fm-icon>
+                    <div>document</div>
                 </div>
             </fm-list-item>
             <fm-list-item>
+                <div>
+                    <fm-icon id="edit"></fm-icon>
+                    <div>edit</div>
+                </div>
                 <div>
                     <fm-icon id="home"></fm-icon>
                     <div>home</div>
@@ -44,12 +48,12 @@
                     <fm-icon id="more"></fm-icon>
                     <div>more</div>
                 </div>
+            </fm-list-item>
+            <fm-list-item>
                 <div>
                     <fm-icon id="plus"></fm-icon>
                     <div>plus</div>
                 </div>
-            </fm-list-item>
-            <fm-list-item>
                 <div>
                     <fm-icon id="tick"></fm-icon>
                     <div>tick</div>
@@ -62,6 +66,8 @@
                     <fm-icon id="user"></fm-icon>
                     <div>user</div>
                 </div>
+            </fm-list-item>
+            <fm-list-item>
                 <div>
                     <fm-icon id="volume"></fm-icon>
                     <div>volume</div>
