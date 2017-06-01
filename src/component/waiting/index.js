@@ -23,6 +23,7 @@ function show(text, cancelable) {
 function hide() {
     vc_waiting.cancelable = true;
     vc_waiting.isUser = false;
+    vc_waiting.popstateEvent();
     history.back();
 }
 
