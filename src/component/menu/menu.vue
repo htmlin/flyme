@@ -44,8 +44,8 @@
 
 <template>
     <div class="fm-menu">
-        <fm-icon @click.native="hide" id="more" color="#666"></fm-icon>
-        <div v-if="show" @click="hide" class="fm-menu--background"></div>
+        <fm-icon @click.native="show = true" id="more" color="#666"></fm-icon>
+        <div v-if="show" @touchstart="hide" class="fm-menu--background"></div>
         <transition name="fm-menu--transition">
             <fm-list v-if="show">
                 <slot></slot>
@@ -77,7 +77,9 @@
         },
         methods: {
             hide() {
-                this.show ? history.back() : this.show = true;
+                setTimeout(() => {
+                    history.back();
+                }, 200); // 防止 touchstart 在菜单键范围内触发时再次打开菜单的问题
             },
             popstateEvent() {
                 this.show = false;
